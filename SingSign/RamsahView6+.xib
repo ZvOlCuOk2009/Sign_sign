@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RamsahView">
+            <connections>
+                <outlet property="imgRamsahLogo" destination="vsJ-ys-9IP" id="SOO-hM-vgs"/>
+                <outlet property="imgTopIcon" destination="XWZ-tT-rqe" id="qC5-eQ-wYG"/>
+                <outlet property="lblArabicTitle" destination="9Yi-qh-oXe" id="rBA-hJ-m44"/>
+                <outlet property="lblEnglishTitle" destination="RYD-br-MsI" id="VIf-L2-j3D"/>
+                <outlet property="lblPrefixString" destination="ETD-4C-ROl" id="mn2-5D-Ory"/>
+                <outlet property="lblRamsahLinkString" destination="2d8-fs-Uwu" id="lgp-iL-Am0"/>
+                <outlet property="txvArabicTopic" destination="f7L-At-gWa" id="VCz-8p-3H5"/>
+                <outlet property="txvEnglishTopic" destination="PwA-7k-NK3" id="DOH-J8-xD0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NIx-Gg-4LJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackColor.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="DY4-fg-RjF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-qh-oXe">
+                    <rect key="frame" x="65" y="37" width="245" height="35"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWZ-tT-rqe">
+                    <rect key="frame" x="334" y="39" width="58" height="58"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYD-br-MsI">
+                    <rect key="frame" x="65" y="60" width="245" height="32"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W0-gf-F7C">
+                    <rect key="frame" x="-14" y="22" width="96" height="96"/>
+                    <state key="normal" image="BeforeMenu.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnBefore:" destination="-1" eventType="touchUpInside" id="i0h-r2-cO9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZH-IP-5Jd">
+                    <rect key="frame" x="0.0" y="113" width="414" height="623"/>
+                    <state key="normal" image="TextFrame.PNG"/>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The idea of Ramsah App is teaching UAE sign language for the community" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PwA-7k-NK3">
+                    <rect key="frame" x="70" y="519" width="294" height="0.0"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vsJ-ys-9IP">
+                    <rect key="frame" x="117" y="138" width="179" height="160"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.ramsah.ae" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d8-fs-Uwu">
+                    <rect key="frame" x="40" y="642" width="332" height="28"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For more information, visit out website:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETD-4C-ROl">
+                    <rect key="frame" x="40" y="604" width="331" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="فكرة تطبيق رمسة هي تعليم المجتمع لغة الإشارة الإماراتية" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f7L-At-gWa">
+                    <rect key="frame" x="44" y="306" width="323" height="289"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="327" y="316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppLogo.png" width="2000" height="2000"/>
+        <image name="BackColor.PNG" width="640" height="290"/>
+        <image name="BeforeMenu.png" width="85" height="85"/>
+        <image name="TextFrame.PNG" width="640" height="640"/>
+    </resources>
+</document>

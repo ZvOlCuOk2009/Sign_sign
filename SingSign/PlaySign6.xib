@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaySign">
+            <connections>
+                <outlet property="imgBefore" destination="PNI-Jq-Hct" id="D11-nX-QbI"/>
+                <outlet property="imgFavourite" destination="c2z-Ap-zF0" id="OYI-Jw-cWh"/>
+                <outlet property="imgLogo" destination="dyd-Bx-xMf" id="n7a-jg-rcX"/>
+                <outlet property="imgLoop" destination="myh-Im-Qyz" id="SUg-nj-Gk5"/>
+                <outlet property="imgNext" destination="mIe-kP-2PH" id="vpZ-Rk-Sth"/>
+                <outlet property="imgPlay" destination="bCk-t5-TpE" id="CeW-Gs-MO6"/>
+                <outlet property="imgSave" destination="fKu-0t-nAs" id="PJp-KY-v3q"/>
+                <outlet property="lblWord1" destination="bMI-oM-2Je" id="vO3-rb-xRa"/>
+                <outlet property="lblWord2" destination="xwn-0z-OPx" id="0ud-zR-OWT"/>
+                <outlet property="lblWord3" destination="aly-vm-Z3E" id="Jat-S6-f24"/>
+                <outlet property="view" destination="iN0-l3-epB" id="7Lm-b7-F0Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyd-Bx-xMf">
+                    <rect key="frame" x="33" y="22" width="310" height="57"/>
+                    <state key="normal" image="PlayScreenTopIcon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNI-Jq-Hct">
+                    <rect key="frame" x="40" y="387" width="49" height="49"/>
+                    <state key="normal" image="BeforePlay.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="beforeSignLoad:" destination="-1" eventType="touchUpInside" id="sPK-s1-CAQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-t5-TpE">
+                    <rect key="frame" x="122" y="387" width="49" height="49"/>
+                    <state key="normal" image="CurrentPlay.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playCurrentSign:" destination="-1" eventType="touchUpInside" id="W2n-bZ-SkR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myh-Im-Qyz">
+                    <rect key="frame" x="206" y="387" width="49" height="49"/>
+                    <state key="normal" image="RepeatPlay.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="repeatCurrentSign:" destination="-1" eventType="touchUpInside" id="Ofr-1T-d8T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIe-kP-2PH">
+                    <rect key="frame" x="287" y="387" width="49" height="49"/>
+                    <state key="normal" image="NextPlay.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextSignLoad:" destination="-1" eventType="touchUpInside" id="gh9-cJ-pys"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-0t-nAs">
+                    <rect key="frame" x="40" y="316" width="49" height="49"/>
+                    <state key="normal" image="Save.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadSignImage:" destination="-1" eventType="touchUpInside" id="2Su-wf-5Qn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-Ap-zF0">
+                    <rect key="frame" x="288" y="316" width="49" height="49"/>
+                    <state key="normal" image="RegisterToFavorite.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveToFavouriteList:" destination="-1" eventType="touchUpInside" id="8JB-N1-1py"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsg-go-R5S">
+                    <rect key="frame" x="0.0" y="27" width="49" height="49"/>
+                    <state key="normal" image="BeforeMenu.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnBefore:" destination="-1" eventType="touchUpInside" id="AcA-5P-bvQ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="DYA-YG-bbi">
+                    <rect key="frame" x="14" y="449" width="349" height="206"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ترحيب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwn-0z-OPx">
+                    <rect key="frame" x="139" y="531" width="208" height="37"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.099903860789999993" green="0.49454933070000001" blue="0.59478635199999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMI-oM-2Je">
+                    <rect key="frame" x="139" y="465" width="208" height="37"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.099903860789999993" green="0.49454933070000001" blue="0.59478635199999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="المستوى الأساسي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aly-vm-Z3E">
+                    <rect key="frame" x="139" y="596" width="208" height="37"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.099903860789999993" green="0.49454933070000001" blue="0.59478635199999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxv-LA-j7a">
+                    <rect key="frame" x="0.0" y="81" width="375" height="298"/>
+                    <state key="normal" image="SignFrame.PNG">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="125.5" y="317.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BeforeMenu.png" width="85" height="85"/>
+        <image name="BeforePlay.png" width="85" height="85"/>
+        <image name="CurrentPlay.png" width="85" height="85"/>
+        <image name="NextPlay.png" width="85" height="85"/>
+        <image name="PlayScreenTopIcon.png" width="640" height="119"/>
+        <image name="RegisterToFavorite.png" width="85" height="85"/>
+        <image name="RepeatPlay.png" width="85" height="85"/>
+        <image name="Save.png" width="85" height="85"/>
+        <image name="SignFrame.PNG" width="640" height="510"/>
+        <image name="Table.PNG" width="634" height="309"/>
+    </resources>
+</document>
